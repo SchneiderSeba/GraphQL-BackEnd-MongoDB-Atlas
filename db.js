@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const mongoURI = process.env.ME_CONFIG_MONGODB_URL || 'mongodb://localhost:27017/mydatabase';
+const mongoURI = process.env.ME_CONFIG_MONGODB_URL;
 
 const connectDB = async () => {
     mongoose.connect(mongoURI)
