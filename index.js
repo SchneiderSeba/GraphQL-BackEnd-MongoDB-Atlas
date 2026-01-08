@@ -30,5 +30,7 @@ async function startApp() {
     });
 
 }
-startApp();
+startApp().catch(error => {
+    console.error('Error starting the server:', error);
+});
 
